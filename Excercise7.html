@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>index.html</title> 
+</head>
+<body>
+    <!-- Creates a text box that says "Enter your name" -->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+    <!-- Creates a button that says "click me" -->
+    <button id="my-button">Click Me</button>
+    <!-- Creates a pop up window that takes the users input and adds Hello infront -->
+    <script>
+      var myButton = document.querySelector('#my-button');
+      var nameInput = document.querySelector('#name-input');
+
+      myButton.addEventListener('click', function () {
+        if (nameInput.value !== '') {
+          alert('Hello ' + nameInput.value);
+        }
+      });
+    </script>
+</html>
